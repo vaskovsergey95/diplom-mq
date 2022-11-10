@@ -1,6 +1,7 @@
-html{
+html {
     font-size: 10px;
 }
+
 @font-face {
     font-family: 'Open Sans Bold';
     src: url("../fonts/OpenSans-Bold.woff");
@@ -31,8 +32,6 @@ h1, h2, h3, ul {
     padding: 0;
 }
 
-@media (min-width: 1200px){
-
 body {
 
     margin: 0 auto;
@@ -43,6 +42,9 @@ body {
     max-width: 1660px;
     width: 100vw;
 }
+
+@media (min-width: 1200px) {
+
 
     /* начало header*/
     .header {
@@ -252,7 +254,7 @@ body {
         display: flex;
         align-items: flex-start;
         justify-content: center;
-        width: 70.48%;
+        width: 90%;
     }
 
     .posts {
@@ -273,7 +275,7 @@ body {
         display: block;
     }
 
-    .main-text{
+    .main-text {
         display: flex;
         flex-direction: column;
     }
@@ -719,6 +721,8 @@ body {
     .social-box {
         display: flex;
         list-style-type: none;
+        justify-content: space-between;
+        width: 150px;
         padding: 0;
     }
 
@@ -727,7 +731,6 @@ body {
         box-sizing: border-box;
         height: 2rem;
         width: 2rem;
-        margin-right: 3rem;
     }
 
     .copy {
@@ -742,8 +745,8 @@ body {
     }
 
     /* конец footer*/
-
 }
+
 @media (min-width: 641px) and (max-width: 1199px) {
     body {
         margin: 0 auto;
@@ -806,36 +809,42 @@ body {
         display: none;
     }
 
-    .hamburger-menu{
+    .hamburger-menu {
         display: flex;
     }
+
     .menu__btn {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 26px;
-        height: 26px;  cursor: pointer;
+        height: 26px;
+        cursor: pointer;
         z-index: 1;
     }
+
     .menu__btn > span,
     .menu__btn > span::before,
     .menu__btn > span::after {
         display: block;
-        position: absolute;  width: 26px;
-        height: 2px;  background-color: white;
+        position: absolute;
+        width: 26px;
+        height: 2px;
+        background-color: white;
     }
+
     .menu__btn > span::before {
         content: '';
         top: -8px;
     }
+
     .menu__btn > span::after {
         content: '';
         top: 8px;
     }
 
 
-
-    .name-header{
+    .name-header {
         position: relative;
         margin-bottom: auto;
         margin-top: auto;
@@ -1009,7 +1018,7 @@ body {
         display: block;
     }
 
-    .main-text{
+    .main-text {
         display: flex;
         flex-direction: column;
     }
@@ -1150,7 +1159,8 @@ body {
     .form-group {
         display: flex;
     }
-    .but-block{
+
+    .but-block {
         flex: 1 1 285px;
         max-width: 285px;
     }
@@ -1179,6 +1189,7 @@ body {
         flex-grow: 0;
         flex-shrink: 0;
     }
+
     .button {
         position: relative;
         background-color: #b59f5b;
@@ -1320,12 +1331,13 @@ body {
     }
 
     /* Начало shop*/
-    .block-shop{
+    .block-shop {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 90%;
     }
+
     .block-card-shop {
         display: flex;
         flex-wrap: wrap;
@@ -1335,7 +1347,7 @@ body {
     .card-shop-1, .card-shop-2, .card-shop-3 {
         width: 48%;
         max-width: 350px;
-        margin: 1%;
+        margin: 0 1% 30px 0;
         height: 44rem;
         background-repeat: no-repeat;
         background-position: top center;
@@ -1483,6 +1495,8 @@ body {
     .social-box {
         display: flex;
         list-style-type: none;
+        justify-content: space-between;
+        width: 150px;
         padding: 0;
         flex-grow: 0;
         flex-shrink: 0;
@@ -1494,7 +1508,6 @@ body {
         box-sizing: border-box;
         height: 2rem;
         width: 2rem;
-        margin-right: 3rem;
     }
 
     .copy {
@@ -1507,8 +1520,10 @@ body {
         text-align: center;
         margin-bottom: 4rem;
     }
+
     /* конец footer*/
 }
+
 @media (max-width: 640px) {
     body {
         margin: 0 auto;
@@ -1523,11 +1538,12 @@ body {
         flex-direction: column;
         align-items: center;
         align-content: center;
+        justify-content: center;
         width: 100%;
         height: 65rem;
         background-image: url("../images/banner-mobile.jpg");
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100%;
         background-position: center center;
         position: relative;
         background-color: #000000;
@@ -1547,19 +1563,8 @@ body {
         z-index: -1;
     }
 
-    .navigation {
-        position: absolute;
-        display: flex;
-        flex-shrink: 1;
-        padding-top: 2.8rem;
-        width: 90%;
-        max-width: 1107px;
-        align-items: center;
-        justify-content: space-between;
-    }
-
     .logo {
-        width: 17.9rem;
+        width: 300px;
         flex-shrink: 0;
     }
 
@@ -1571,47 +1576,53 @@ body {
         display: none;
     }
 
-    .hamburger-menu{
+    .hamburger-menu {
+        position: absolute;
+        top: 30px;
+        right: 12px;
         display: flex;
     }
+
     .menu__btn {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 26px;
-        height: 26px;  cursor: pointer;
+        height: 26px;
+        cursor: pointer;
         z-index: 1;
     }
+
     .menu__btn > span,
     .menu__btn > span::before,
     .menu__btn > span::after {
         display: block;
-        position: absolute;  width: 26px;
-        height: 2px;  background-color: white;
+        position: absolute;
+        width: 26px;
+        height: 2px;
+        background-color: white;
     }
+
     .menu__btn > span::before {
         content: '';
         top: -8px;
     }
+
     .menu__btn > span::after {
         content: '';
         top: 8px;
     }
 
 
-
-    .name-header{
-        position: relative;
-        margin-bottom: auto;
-        margin-top: auto;
+    .name-header {
         box-sizing: content-box;
-        max-width: 58rem;
+        width: 360px;
         text-align: center;
         text-transform: uppercase;
         color: #ffffff;
         font-style: normal;
         line-height: 6rem;
-        font-size: 3.7rem;
+        font-size: 26px;
         font-family: "Open Sans Bold", sans-serif
     }
 
@@ -1769,16 +1780,18 @@ body {
         flex-wrap: wrap;
         overflow: hidden
     }
-    .image-post{
+
+    .image-post {
         width: 100%;
     }
+
     .main-image {
         margin-right: 2%;
         display: block;
         width: 100%;
     }
 
-    .main-text{
+    .main-text {
         display: flex;
         flex-direction: column;
     }
@@ -1820,7 +1833,7 @@ body {
         color: #b59f5b;
     }
 
-    .date-name-block{
+    .date-name-block {
         display: flex;
         align-items: center;
     }
@@ -1923,7 +1936,8 @@ body {
     .form-group {
         display: flex;
     }
-    .but-block{
+
+    .but-block {
         flex: 1 1 285px;
         max-width: 285px;
     }
@@ -1952,6 +1966,7 @@ body {
         flex-grow: 0;
         flex-shrink: 0;
     }
+
     .button {
         position: relative;
         background-color: #b59f5b;
@@ -2093,12 +2108,13 @@ body {
     }
 
     /* Начало shop*/
-    .block-shop{
+    .block-shop {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 90%;
     }
+
     .block-card-shop {
         display: flex;
         flex-wrap: wrap;
@@ -2110,7 +2126,7 @@ body {
     .card-shop-1, .card-shop-2, .card-shop-3 {
         width: 98%;
         max-width: 350px;
-        margin: 1%;
+        margin-bottom: 30px;
         height: 50rem;
         background-repeat: no-repeat;
         background-position: top center;
@@ -2258,7 +2274,9 @@ body {
     .social-box {
         display: flex;
         list-style-type: none;
+        justify-content: space-between;
         padding: 0;
+        width: 150px;
         flex-grow: 0;
         flex-shrink: 0;
 
@@ -2269,7 +2287,7 @@ body {
         box-sizing: border-box;
         height: 2rem;
         width: 2rem;
-        margin-right: 3rem;
+
     }
 
     .copy {
@@ -2282,5 +2300,147 @@ body {
         text-align: center;
         margin-bottom: 4rem;
     }
+
     /* конец footer*/
 }
+
+/* ----начало popup----*/
+
+.popup {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.75);
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.popup-box {
+    position: relative;
+    max-width: 390px;
+    width: 95%;
+    background-color: #ffffff;
+    margin: auto;
+    padding: 20px;
+}
+
+.popup-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: 'Open Sans Bold', sans-serif;
+    font-size: 2rem;
+
+}
+
+.popup-title:before {
+    position: absolute;
+    border-bottom: 0.3rem solid #e1d9bd;
+    margin-top: 4rem;
+    width: 6.6rem;
+    content: "";
+}
+
+.option {
+    background-image: url("../svg/form-arrows.svg");
+    background-repeat: no-repeat;
+    background-size: 7px;
+    background-position: right 13px center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: block;
+    width: 100%;
+    background-color: #f3f7f5;
+    border: none;
+    padding: 15px;
+}
+
+.radio-group {
+    margin-right: 15px;
+}
+
+.radio-group-option::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    background-image: url("../svg/form-empty-circle.svg");
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: center center;
+    margin-right: 5px;
+}
+
+.radio:checked ~ .radio-group-option::before {
+    background-image: url("../svg/form-circle.svg");
+}
+
+.radio {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.field:hover, .radio:hover {
+    cursor: pointer;
+}
+
+.option, .popup-close, .field-textarea:focus {
+    outline: none;
+}
+
+.field-textarea {
+    box-sizing: border-box;
+    width: 100%;
+    height: 130px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    padding: 10px;
+    background-color: #f3f7f5;
+    border: none;
+}
+
+.form-row:nth-child(n+1) {
+    margin-top: 20px;
+}
+
+.question {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.question, .radio-group-option {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+}
+
+.popup-close {
+    position: absolute;
+    bottom: 102%;
+    left: 95%;
+    width: 20px;
+    height: 20px;
+    background-image: url("../svg/form-x.svg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center center;
+    border: none;
+}
+
+/*----конец popup----*/
