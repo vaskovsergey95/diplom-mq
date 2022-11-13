@@ -1667,7 +1667,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-wrap: wrap;
+        flex-direction: column;
         width: 100%;
     }
 
@@ -1690,7 +1690,7 @@ body {
 
     .trends-card-1, .trends-card-2, .trends-card-3, .trends-card-4 {
         background-size: cover;
-        width: 38.8rem;
+        width: 100%;
         height: 32rem;
         background-position: center center;
         position: relative;
@@ -1699,7 +1699,7 @@ body {
         overflow: hidden;
         display: flex;
         align-items: flex-end;
-        margin: 1px;
+        margin-bottom: 2px;
         flex-basis: 318px;
         flex-grow: 1;
         flex-shrink: 1;
