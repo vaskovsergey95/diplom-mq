@@ -82,7 +82,8 @@ body {
         flex-grow: 1;
         display: flex;
         padding-top: 2.8rem;
-        width: 1107px;
+        width: 90%;
+        max-width: 1170px;
         align-items: center;
         justify-content: space-between;
     }
@@ -254,6 +255,7 @@ body {
         display: flex;
         align-items: flex-start;
         justify-content: center;
+        max-width: 1170px;
         width: 90%;
     }
 
@@ -567,14 +569,20 @@ body {
     }
 
     /* Начало shop*/
+    .block-shop{
+        width: 90%;
+        max-width: 1170px;
+    }
     .block-card-shop {
         display: flex;
-        flex-wrap: wrap;
-        width: 117rem;
+        justify-content: space-between;
+        width: 100%;
+
     }
 
     .card-shop-1, .card-shop-2, .card-shop-3 {
-        width: 39rem;
+        width: 30%;
+        max-width: 390px;
         height: 44rem;
         background-repeat: no-repeat;
         background-size: 30rem;
@@ -600,29 +608,24 @@ body {
 
     .card-border-1 {
         height: 26.5rem;
-        width: 36rem;
+        width: 100%;
         box-sizing: border-box;
-        margin-left: 0;
         padding: 5rem 3.5rem 7rem 2rem;
         border: 0.3rem solid #b59f5b;
     }
 
     .card-border-2 {
         height: 26.5rem;
-        width: 36rem;
+        width: 100%;
         box-sizing: border-box;
-        margin-left: auto;
-        margin-right: auto;
         padding: 5rem 3.5rem 7rem 2rem;
         border: 0.3rem solid #b59f5b;
     }
 
     .card-border-3 {
         height: 26.5rem;
-        width: 36rem;
+        width: 100%;
         box-sizing: border-box;
-        margin-left: auto;
-        margin-right: 0;
         padding: 5rem 3.5rem 7rem 2rem;
         border: 0.3rem solid #b59f5b;
     }
@@ -704,7 +707,8 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 117rem;
+        width: 90%;
+        max-width: 1170px;
     }
 
     .footer-link {
