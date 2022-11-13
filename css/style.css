@@ -799,7 +799,7 @@ body {
         flex-shrink: 1;
         padding-top: 2.8rem;
         width: 90%;
-        max-width: 1107px;
+        max-width: 1170px;
         align-items: center;
         justify-content: space-between;
     }
@@ -1003,7 +1003,7 @@ body {
         align-items: flex-start;
         justify-content: center;
         max-width: 1170px;
-        width: 100%;
+        width: 90%;
     }
 
     .posts {
@@ -1484,6 +1484,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        max-width: 1170px;
         width: 90%;
     }
 
@@ -2316,7 +2317,7 @@ body {
 
 .popup {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     box-sizing: border-box;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -2330,7 +2331,7 @@ body {
 .popup-box {
     position: relative;
     max-width: 390px;
-    width: 95%;
+    width: 80%;
     background-color: #ffffff;
     margin: auto;
     padding: 20px;
@@ -2421,6 +2422,7 @@ body {
     padding: 10px;
     background-color: #f3f7f5;
     border: none;
+    resize: none;
 }
 
 .form-row:nth-child(n+1) {
@@ -2435,6 +2437,21 @@ body {
 .question, .radio-group-option {
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
+}
+
+.button-popup {
+    border: 0;
+    background-color: #b59f5b;
+    width: 100%;
+    height: 4.6rem;
+    font-size: 1.57rem;
+    font-family: "Open Sans Bold", sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.button-popup:hover {
+    background-color: #000000;
 }
 
 .popup-close {
